@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/avenir/AvenirLTStd-Book.otf');
+}
+  
+/* =============================================================================
+HTML5 CSS Reset Minified - Eric Meyer
+========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+* {
+    font-family: 'Avenir'
+}
+
+p {
+    margin-bottom: 20px;
+    font-family: 'Avenir';
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #FFFFFF;
+
+    @media screen and (max-width: 768px) {
+        font-size: calc(14px + 0.390625vw);
+        line-height: calc(24px + 0.390625vw);
+    }
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 860px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1200px;
+    }
+}
