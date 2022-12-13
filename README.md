@@ -1,8 +1,16 @@
 ## Cara menjalankan project
 1. buat folder **/public/videos** untuk storage data video yang diupload.
-2. import database sql video_streaming yang disertakan dalam project.
+2. import database sql nobar.sql yang disertakan dalam project.
 
 ## Screenshot program
-![image](https://drive.google.com/uc?export=view&id=1BY-0aB3TRnFP1_NrlbF2QqtMyggOSQzM)
-![image](https://drive.google.com/uc?export=view&id=1AyVzHzVbBEB4HhOlEtWYPqf0hN100QjW)
-![image](https://drive.google.com/uc?export=view&id=1gTWSX8Y2mESKChV8UeZgfU3KoKYdI3X2)
+1. List Video
+![image](https://nobar.bangunteknologi.com/img/List-Video.png)
+
+2. Upload Video
+![image](https://nobar.bangunteknologi.com/img/Upload-Video.png)
+
+3. Edit Video
+![image](https://nobar.bangunteknologi.com/img/Edit-Video.png)
+
+4. Delete Video
+![image](https://nobar.bangunteknologi.com/img/Delete-Video.png)
