@@ -1,8 +1,8 @@
-## Cara menjalankan project
+## Cara Menjalankan Project
 1. buat folder **/public/videos** untuk storage data video yang diupload.
 2. import database sql nobar.sql yang disertakan dalam project.
 
-## Screenshot program
+## Screenshot Website
 1. List Video
 ![image](https://nobar.bangunteknologi.com/img/List-Video.png)
 
