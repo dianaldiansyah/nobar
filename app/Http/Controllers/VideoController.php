@@ -51,6 +51,10 @@ class VideoController extends Controller
             $video->name = $request->name;
         }
 
+        if ($request->description != "") {
+            $video->description = $request->description;
+        }
+
         if ($request->hasFile('video'))
         {
             $path = $request->file('video')->store('', ['disk' => 'public-video']);

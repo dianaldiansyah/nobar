@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nobar - Video Streaming No #1 di Binus University</title>
 
-        <link rel="stylesheet" href="/css/sweetalert.css">
-        <link rel="stylesheet" href="/css/apps.css">
-        <link rel="shortcut icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="{{ asset('css/sweetalert.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/apps.css') }}">
+        <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <div class="header__logo">
-                    <img src="/img/logo.png" alt="">
+                    <img src="{{ asset('img/logo.png') }}" alt="">
                 </div>
                 <div class="header__navigation">
                     <ul class="navigation__menu">
@@ -107,8 +107,9 @@
             </div>
         </section>
 
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/sweetalert.min.js"></script>
-        <script src="/js/apps.js"></script>
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/jquery-validate.min.js') }}"></script>
+        <script src="{{ asset('js/sweetalert.min.js') }}"></script>
+        <script src="{{ asset('js/apps.js') }}"></script>
     </body>
 </html>

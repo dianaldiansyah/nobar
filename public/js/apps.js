@@ -19,3 +19,9 @@ $(".action__btn-delete").on("click", function() {
         }
     });
 });
+
+$(".form-upload").validate({
+    submitHandler: function (e) {
+        $(".form-upload").submit();
+    }
+});

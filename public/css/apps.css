@@ -251,6 +251,9 @@ p {
         width: 88%;
         border: 1px solid #D9D9D9;
         border-radius: 10px; }
+      .main__content .form__input .form-group label.error {
+        color: #E20914;
+        margin-top: 8px; }
     .main__content .form__input .form-action .action__btn {
       cursor: pointer;
       margin-top: 20px;

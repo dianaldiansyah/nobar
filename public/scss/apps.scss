@@ -212,6 +212,11 @@
                         border: 1px solid #D9D9D9;
                         border-radius: 10px;
                     }
+
+                    label.error {
+                        color: #E20914;
+                        margin-top: 8px;
+                    }
                 }
 
                 .form-action {

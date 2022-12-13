@@ -7,6 +7,8 @@
         <title>Nobar - Video Streaming No #1 di Binus University</title>
 
         <link rel="stylesheet" href="/css/apps.css">
+        <link rel="stylesheet" href="{{ asset('css/apps.css') }}">
+        <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
     </head>
     <body>
         <header class="header">
@@ -34,27 +36,27 @@
                     <form class="form" action="{{'/video/'.$video->id}}" method="post" enctype="multipart/form-data">
                     @method('patch')
                     @else
-                    <form class="form" action="{{'/upload'}}" method="post" enctype="multipart/form-data">
+                    <form class="form form-upload" action="{{'/upload'}}" method="post" enctype="multipart/form-data">
                     @endif
                         @csrf
                         <div class="form__input">
                             <div class="form-group">
                                 <label for="name">Nama File/Video</label>
-                                <input type="text" name="name" value="{{$video ? $video->name : ''}}">
+                                <input type="text" name="name" value="{{$video ? $video->name : ''}}" required>
                             </div>
                             <div class="form-group">
                                 <label for="description">Deskripsi Video</label>
-                                <textarea name="description" cols="30" rows="10">{{$video ? $video->description : ''}}</textarea>
+                                <textarea name="description" cols="30" rows="10" required>{{$video ? $video->description : ''}}</textarea>
                             </div>
                             <div class="form-group">
                                 <label for="file">File Video</label>
-                                <input class="input-video" type="file" name="video">
+                                <input class="input-video" type="file" name="video" required>
                             </div>
 
                             <div class="form-action">
                                 <button class="action__btn action__btn-upload" type="submit" >{{$video ? 'Save' : 'Upload'}}</button>
                                 <a href="{{'/'}}">
-                                    <button class="action__btn action__btn-cancel">Cancel</button>
+                                    <button class="action__btn action__btn-cancel" type="button">Cancel</button>
                                 </a>
                             </div>
                         </div>
@@ -76,7 +78,8 @@
             </div>
         </section>
 
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/apps.js"></script>
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/jquery-validate.min.js') }}"></script>
+        <script src="{{ asset('js/apps.js') }}"></script>
     </body>
 </html>
